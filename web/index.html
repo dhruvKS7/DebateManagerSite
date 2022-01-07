@@ -1,0 +1,171 @@
+<!--
+Dhruv K. Saligram
+1/11/2020
+This program facilitates mock conferences and debate team management
+This class acts as a home page for the user
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <!--Linking to other classes below:-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="StylingSheet.css"/>
+    </head>
+    <!--Creating body below:-->
+    <body id="introBody">
+        <!--Creating navbar to login or signup below:-->
+        <div class="header">
+            <nav>
+                <ul id="introNav">
+                    <!--Linking the nav bar to other HTML pages below:-->
+                    <li>||</li>
+                    <li><a href="#popup1">Login</a></li>
+                    <li>||</li>
+                    <li><a href="#popup2">Sign Up</a></li>
+                    <li>||</li>
+                    <li><a href="#popup3">Admin</a></li>
+                    <li>||</li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--Creating container for Debate logo below:-->
+        <div id="entriesRight">
+            <div>
+                <img id="indexImage" src="IndexDebate.png" />
+            </div>
+        </div>
+        <!--Creating header below:-->
+        <h1 id="welcomeText">DEBATE<br>MANAGER</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="entriesLeft">
+            <h1 id="imageText">TEAM IMAGES</h1>
+            <!--Creating slideshow holding photos below:-->
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide">
+                        <!--Inserting photo into slideshow below:-->
+                        <img src="DebatePhoto1.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-6" class="prev">&#x2039;</label>
+                        <label for="img-2" class="next">&#x203a;</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <!--Inserting photo into slideshow below:-->
+                        <img src="DebatePhoto2.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-1" class="prev">&#x2039;</label>
+                        <label for="img-3" class="next">&#x203a;</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-3" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <!--Inserting photo into slideshow below:-->
+                        <img src="DebatePhoto3.JPG" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-2" class="prev">&#x2039;</label>
+                        <label for="img-4" class="next">&#x203a;</label>
+                    </div>
+                </li>
+                <!--Inserting dots for navigation of slideshow below:-->
+                <li class="nav-dots">
+                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                </li>
+            </ul>
+            <br>
+            <br>
+        </div>
+        <!--Creating popup to receive data to check against database below:-->
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>LOGIN BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <!--Creating area for user to type in data below:-->
+                    <form action="loginSuccessful" method="POST">
+                        USER NAME: <br> <input type="text" name="userName"/>
+                        <br>
+                        <br>
+                        PASSWORD: <br><input type="password" name="password"/>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="LOGIN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Creating popup to receive data to insert into database below:-->
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <!--Creating area for user to type in data below:-->
+                    <form action="signupSuccessful" method="POST">
+                        NEW USER NAME: <br><input type="text" name="createUserName"/>
+                        <br>
+                        <br>
+                        NEW PASSWORD: <br><input type="password" name="createPassword"/>
+                        <br>
+                        <br>
+                        FIRST NAME: <br><input type="text" name="createFirst"/>
+                        <br>
+                        <br>
+                        LAST NAME: <br><input type="text" name="createLast"/>
+                        <br>
+                        <br>
+                        YEARS OF EXPERIENCE: <br><input type="text" name="createYears"/>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="SIGNUP"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Creating popup to receive data to insert into database below:-->
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <h2>ADMIN LOGIN</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <!--Creating area for user to type in data below:-->
+                    <form action="adminSuccessful" method="POST">
+                        USER NAME: <br><input type="text" name="adminUserName"/>
+                        <br>
+                        <br>
+                        PASSWORD:<br> <input type="password" name="adminPassword"/>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="LOGIN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

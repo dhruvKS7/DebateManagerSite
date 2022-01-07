@@ -1,0 +1,1794 @@
+/*
+Dhruv K. Saligram
+1/11/2020
+This program facilitates mock conferences and debate team management
+This class styles all elements throughout all linked webpages
+*/
+/*Importing fonts below:*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+/*Styling button below:*/
+#entryButton {
+    background-color: #D8C3A5;
+    border: none;
+    color: #272727;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+/*Styling button when hovered over below:*/
+#entryButton:hover {
+    color: #D8C3A5;
+    font-weight: 700;
+    background: #272727;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3 ease 0s;
+}
+/*Styling button below:*/
+#entryButtonTest {
+    background-color: rgb(39, 57, 77);
+    color: #D8C3A5;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: fixed;
+    margin-left: 0px;
+}
+/*Styling button when hovered over below:*/
+#entryButtonTest:hover {
+    background-color: rgb(55,162,89);
+    color: rgb(39, 57, 77);
+    font-weight: 700;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3 ease 0s;
+}
+/*Styling button below:*/
+#errorButton {
+    margin-left: 45.5%;
+}
+/*Styling button below:*/
+#entryButtonTeam {
+    background-color: #D8C3A5;
+    border: none;
+    color: #272727;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: fixed;
+    margin-left: 0px;
+}
+/*Styling button when hovered over below:*/
+#entryButtonTeam:hover {
+    color: #D8C3A5;
+    font-weight: 700;
+    background: #272727;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3 ease 0s;
+}
+/*Styling button below:*/
+#entryButtonAnnounce {
+    background-color: #D8C3A5;
+    border: none;
+    color: #272727;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: fixed;
+    margin-left: 0px;
+}
+/*Styling button when hovered over below:*/
+#entryButtonAnnounce:hover {
+    color: #D8C3A5;
+    font-weight: 700;
+    background: #272727;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3 ease 0s;
+}
+/*Styling button form below:*/
+#entryButtonForm {
+    text-align: center;
+}
+/*Aligning text below:*/
+#databaseText {
+    text-align: center;
+}
+/*Styling background below:*/
+body {
+    background-color: #EAE7DC;
+}
+/*Styling button below:*/
+.login-btn {
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #CCFFFF;
+    background-color: rgb(0, 155, 159);
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+/*Styling button when hovered over below:*/
+.login-btn:hover {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*Styling button animations below:*/
+.login-btn {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*Styling background below:*/
+#introBody {
+    background-color: #FF987D;
+}
+/*Styling text below:*/
+#welcomeText{
+    /*font-size: 150px;*/
+    font-weight: 200;
+    text-align: center;
+    /*  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        line-height: 100%;
+    */
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;*/
+    font-family: Florence, cursive;
+    font-size: 80px;
+    line-height: 120%;
+    font-style: normal;
+    font-variant: normal;
+    color: #2727272;
+    margin-top: 5%;
+}
+#imageText {
+    font-weight: 200;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 68px;
+    font-style: normal;
+    font-variant: normal;
+    color: white;
+}
+/*Styling container below:*/
+#wrapper {
+    width: 100px;
+    margin: 0 auto;
+    background: #ffffe6;
+    padding: 5px;
+    border: 3px solid #000066;
+    border-radius: 15px;
+    background-clip: padding-box;
+    text-align: center;
+}
+/*Styling button below:*/
+.Sbutton {
+    color: rgb(36,56,78);
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    background-image: linear-gradient(top, #fff, #f0f0f0);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+/*Styling button when hovered over below:*/
+.Sbutton:hover {
+    border-color: #999;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+/*Styling button when clicked below:*/
+.Sbutton:activate {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25) inset;
+}
+/*Styling container below:*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    background-size: 100% 100%;
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    margin-bottom: -40%;
+}
+/*Styling container when called below:*/
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    background-size: 100% 100%;
+}
+/*Styling popup below:*/
+.popup {
+    margin: 75px auto;
+    padding: 20px;
+    /*background-color: #FF987D;*/
+    /*background-color: rgb(86,140,232);*/
+    background-color: rgb(36,56,78);
+    border: 1px solid #666;
+    max-width: 300px;
+    max-height: 400px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    position: relative;
+    color: white;
+}
+/*Styling popup below:*/
+.popup h2 {
+    margin-top: 0;
+    color: #2727272;
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*Styling popup when being closed below:*/
+.popup .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+/*Styling popup when being hovered over below:*/
+.popup .close:hover {
+    opacity: 1;
+}
+/*Styling popup content below:*/
+.popup .content {
+    color: #2727272;
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 130%;
+    max-height: 350px;
+    overflow: auto;
+    text-align: center;
+}
+/*Styling popup content text below:*/
+.popup .content #announcementStyle {
+    width: 250px;
+    height: 100px;
+}
+/*Styling popup below:*/
+.popup p {
+    margin: 0 0 1em;
+}
+/*Styling popup below:*/
+.popup p:last-child {
+    margin: 0;
+}
+/*Creating settings for header class below:*/
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(61,98,155);
+    z-index: 2;
+}
+/*Creating settings for nav tag below:*/
+.header nav {
+    margin: auto;
+    padding: 10px 0 ; 
+}
+/*Creating settings for ul tag below:*/
+.header nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(36,56,78,1) 0%, rgba(53,84,129,1) 50%, rgba(69,112,181,1) 85%, rgba(86,140,232,1) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+/*Creating settings for introNav id below:*/
+.header nav #introNav {
+    text-align: left;
+    padding-right: 25px;
+    background: linear-gradient(90deg, rgba(36,56,78,1) 0%, rgba(53,84,129,1) 50%, rgba(69,112,181,1) 85%, rgba(86,140,232,1) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+/*Creating settings for li tag below:*/
+.header nav ul li {
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+    /*    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        line-height: 100%;*/
+
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    line-height: 100%;
+    font-style: normal;
+    font-variant: normal;
+}
+/*Creating settings for a tag below:*/
+.header nav ul li a {
+    padding: 18px;
+    text-align: center;
+    /*    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        line-height: 100%;*/
+
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", cursive;
+    line-height: 100%;
+    font-style: normal;
+    font-variant: normal;
+    text-transform:uppercase;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+}
+/*Creating settings for input tag below:*/
+.header nav ul li input {
+    padding: 18px;
+    text-align: center;
+    /*    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        line-height: 100%;*/
+
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", cursive;
+    line-height: 100%;
+    font-style: normal;
+    font-variant: normal;
+    text-transform:uppercase;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+}
+/*Creating settings for button tag below:*/
+.header nav ul li button {
+    padding: 18px;
+    text-align: center;
+    /*    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        line-height: 100%;*/
+
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", cursive;
+    line-height: 100%;
+    font-style: normal;
+    font-variant: normal;
+    text-transform:uppercase;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+}
+/*Creating settings for a tag while being hovered over below:*/
+.header nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+/*Creating settings for input tag while being hovered over below:*/
+.header nav ul li input:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+/*Creating settings for button tag while being hovered over below:*/
+.header nav ul li button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+/*Styling container below:*/
+.slides {
+    padding: 0;
+    width: 850px;
+    height: 507px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+/*Styling container animations below:*/
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+/*Styling container below:*/
+.slides input { display: none; }
+/*Styling container below:*/
+.slide-container { display: block; }
+/*Styling container below:*/
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 850px;
+    height: 507px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+/*Styling images below:*/
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+/*Styling container below:*/
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+/*Styling container below:*/
+.slide:hover + .nav label { opacity: 0.5; }
+/*Styling container below:*/
+.nav label:hover { opacity: 1; }
+/*Styling container below:*/
+.nav .next { right: 0; }
+/*Styling container below:*/
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+/*Styling container below:*/
+input:checked + .slide-container .nav label { display: block; }
+/*Styling dots below:*/
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+/*Styling dots below:*/
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*Styling dots below:*/
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/*Styling images below:*/
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+/*Styling navigation bar button below:*/
+#navBarButton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    outline:none;
+    color: white;
+}
+/*Styling button below:*/
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+/*Styling dropdown below:*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/*Styling dropdown below:*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /*    background-color: #f1f1f1;
+        hello*/
+    background-color: rgb(36,56,78);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*Styling dropdown below:*/
+.dropdown-content input {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/*Styling dropdown below:*/
+.dropdown-content input:hover {background-color: transparent;}
+/*Styling dropdown below:*/
+.dropdown:hover .dropdown-content {display: block;}
+/*Styling dropdown below:*/
+.dropdown:hover .dropbtn {background-color: transparent;}
+/*Styling image below:*/
+#leaderImage {
+    width: 400px;
+    height: 400px;
+    margin-left: 120px;
+    margin-top: 100px;
+    position: fixed;
+}
+/*Styling image below:*/
+#leaderImageReg {
+    width: 520px;
+    height: 520px;
+    margin-left: 50px;
+    margin-top: 130px;
+    position: fixed;
+}
+/*Styling image below:*/
+#debateImage {
+    width: 390px;
+    height: 390px;
+    margin-left: 125px;
+    margin-top: 140px;
+    position: fixed;
+}
+/*Styling image below:*/
+#debateImageReg {
+    width: 460px;
+    height: 460px;
+    margin-left: 90px;
+    margin-top: 180px;
+    position: fixed;
+}
+/*Styling image below:*/
+#megaphoneImage {
+    width: 400px;
+    height: 400px;
+    margin-left: 120px;
+    margin-top: 150px;
+    position: fixed;
+}
+/*Styling image below:*/
+#megaphoneImageReg {
+    width: 500px;
+    height: 500px;
+    margin-left: 60px;
+    margin-top: 150px;
+    position: fixed;
+}
+/*Styling image below:*/
+#gavelImage {
+    width: 370px;
+    height: 370px;
+    margin-left: 130px;
+    margin-top: 150px;
+    position: fixed;
+}
+/*Styling image below:*/
+#gavelImageReg {
+    width: 450px;
+    height: 450px;
+    margin-left: 70px;
+    margin-top: 180px;
+    position: fixed;
+}
+/*Styling image below:*/
+#teamMembersRegImage {
+    position: fixed;
+    width: 35%;
+    height: 65%;
+    margin-left: 5%;
+    margin-top: 11%;
+}
+/*Styling image below:*/
+#teamMembersImage {
+    position: fixed;
+    width: 35%;
+    height: 65%;
+    margin-left: 5%;
+    margin-top: 11%;
+}
+/*Styling image below:*/
+#leadershipRegImage {
+    position: fixed;
+    width: 35%;
+    height: 65%;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+/*Styling image below:*/
+#leadershipImage {
+    position: fixed;
+    width: 35%;
+    height: 65%;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+/*Styling image below:*/
+#conferencesRegImage {
+    position: fixed;
+    width: 35%;
+    height: 65%;
+    margin-left: 2%;
+    margin-top: 11%;
+}
+/*Styling image below:*/
+#conferencesImage {
+    position: fixed;
+    width: 35%;
+    height: 65%;
+    margin-left: 2%;
+    margin-top: 11%;
+}
+/*Styling image below:*/
+#awardsRegImage {
+    position: fixed;
+    width: 37%;
+    height: 67%;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+/*Styling image below:*/
+#passedMotionsRegImage {
+    position: fixed;
+    width: 37%;
+    height: 67%;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+/*Styling image below:*/
+#awardsImage {
+    position: fixed;
+    width: 35%;
+    height: 63%;
+    margin-left: 0.5%;
+    margin-top: 10%;
+}
+/*Styling image below:*/
+#inboxRegImage {
+    position: fixed;
+    width: 37%;
+    height: 67%;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+/*Styling image below:*/
+#inboxImage {
+    position: fixed;
+    width: 37%;
+    height: 67%;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+/*Styling image below:*/
+#mockHomeImage {
+    position: fixed;
+    width: 37%;
+    height: 67%;
+    margin-left: 11%;
+    margin-top: 11%;
+}
+/*Styling image below:*/
+#countryImage {
+    position: fixed;
+    width: 37%;
+    height: 67%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+/*Styling image below:*/
+#procedureImage {
+    position: fixed;
+    width: 40%;
+    height: 70%;
+    margin-left: 10%;
+    margin-top: 11%;    
+}
+/*Styling image below:*/
+#timeImage {
+    position: fixed;
+    width: 18%;
+    height: 31%;
+    margin-left: 3%;
+    margin-top: 9%; 
+}
+/*Styling image below:*/
+#motionImage1 {
+    position: fixed;
+    width: 18%;
+    height: 31%;
+    margin-left: 3%;
+    margin-top: 30%; 
+}
+/*Styling image below:*/
+#motionImage2 {
+    position: fixed;
+    width: 18%;
+    height: 31%;
+    margin-left: 80%;
+    margin-top: 30%; 
+}
+/*Styling image below:*/
+#paperImage1 {
+    position: fixed;
+    width: 18%;
+    height: 31%;
+    margin-left: 3%;
+    margin-top: 30%; 
+}
+/*Styling image below:*/
+#paperImage2 {
+    position: fixed;
+    width: 18%;
+    height: 31%;
+    margin-left: 77%;
+    margin-top: 30%; 
+}
+/*Styling table below:*/
+#tableTest {
+    float: right;
+    margin-right: 50px;
+    /*margin-bottom: 50px;*/
+}
+/*Styling table below:*/
+#tableTestTwo {
+    float: left;
+    width: 100%;
+    /*    table-layout: fixed;
+        border-collapse: collapse;*/
+}
+/*#tableTest thead {
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+}
+#tableTest tbody {
+    display:block;
+    width: 100%;
+    overflow: auto;
+    height: 100px;
+}
+#tableTest thead tr {
+   display: block;
+}
+#tableTest th, #tableTest td {
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+}*/
+/*Styling text below:*/
+#announcementText {
+    text-align: left;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight: 200;
+    font-size: 60px;
+    padding-left: 20px;
+    display: inline-block;
+}
+/*Styling text below:*/
+#mockAnnouncementText {
+    text-align: left;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight: 200;
+    font-size: 80px;
+    padding-left: 20px;
+    margin-left: 2%;
+    display: inline-block;
+}
+/*Styling text below:*/
+#errorText {
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 500%;
+    padding-left: 2%;
+}
+/*Styling container below:*/
+#entriesRight {
+    float: right;
+    height: 50%;
+    border-style: solid;
+    border-width: 5px;
+    width: 60%;
+    margin: 0;
+    margin-right: -1%;
+    top: 14.2%;
+    background-color: rgb(39, 57, 77);
+    border-color: #61FFA2;
+}
+/*Styling container below:*/
+#teamInfoRight {
+    float: right;
+    height: 70%;
+    border-style: solid;
+    border-width: 5px;
+    width: 60%;
+    margin: 0;
+    margin-right: -1%;
+    top: 14.2%;
+    background-color: rgb(39, 57, 77);
+    border-color: #61FFA2;
+}
+/*Styling container below:*/
+#entriesLeft {
+    float: left;
+    border-style: solid;
+    border-width: 5px;
+    width: 90%;
+    margin: 0;
+    margin-left: -1%;
+    top: 50.2%;
+    background-color: rgb(39, 57, 77);
+    border-color: #61FFA2;
+}
+/*Styling table below:*/
+th:first-child {
+    border-top-left-radius:3px;
+}
+/*Styling table below:*/
+th:last-child {
+    border-right:none;
+    border-top-right-radius:3px;
+}
+/*Styling table below:*/
+tr:first-child {
+    border-top:none;
+}
+/*Styling table below:*/
+tr:last-child {
+    border-bottom:none;
+}
+/*Styling table below:*/
+tr:nth-child(odd) td {
+    color: #D8C3A5;
+    background-color: rgb(39, 57, 77);
+}
+/*Styling table below:*/
+tr:nth-child(odd):hover td {
+    background:rgb(55,162,89);
+    color: rgb(39, 57, 77);
+}
+/*Styling table below:*/
+tr:last-child td:first-child {
+    border-bottom-left-radius:3px;
+}
+/*Styling table below:*/
+tr:last-child td:last-child {
+    border-bottom-right-radius:3px;
+}
+/*Styling table below:*/
+td:last-child {
+    border-right: 0px;
+}
+/*Styling table below:*/
+th.text-left {
+    text-align: left;
+}
+/*Styling table below:*/
+th.text-center {
+    text-align: center;
+}
+/*Styling table below:*/
+th.text-right {
+    text-align: right;
+}
+/*Styling table below:*/
+td.text-left {
+    text-align: left;
+}
+/*Styling table below:*/
+td.text-center {
+    text-align: center;
+}
+/*Styling table below:*/
+td.text-right {
+    text-align: right;
+}
+/*Styling background below:*/
+#leaderBackground {
+    background-image: url("IndexDebateBackground.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 53% 80%;
+    background-position: 50% 85%;
+    background-color: rgb(255, 152, 125);
+}
+/*Styling text below:*/
+#smallAnnouncement {
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 0px;
+}
+/*Styling image below:*/
+#indexImage {
+    margin-left: 33%;
+    /*margin-top: 5%;*/
+    padding-top: 5%;
+    padding-bottom: 3%;
+    height: 35%;
+    width: 35%;
+}
+/*Styling table below:*/
+#centeredTable {
+    margin-top: -7%;
+}
+/*Styling table below:*/
+#centeredTableTwo {
+    margin-top: 0%;
+}
+/*Styling navbar below:*/
+#navBarColor {
+    background: linear-gradient(90deg, rgba(36,56,78,1) 0%, rgba(53,84,129,1) 50%, rgba(69,112,181,1) 85%, rgba(86,140,232,1) 100%);
+}
+/*Styling text below:*/
+.updateText {
+    text-align: center;
+    color: white;
+}
+/*Styling text below:*/
+input {
+    /*color: rgb(36,56,78);*/
+    color: white;
+    border: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1% 1%;
+    margin: 8px 0;
+    font-size: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/*Styling text below:*/
+input[type=text] {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+/*Styling text below:*/
+input[type=text]:focus {
+    border: 5px solid white;
+}
+/*Styling text below:*/
+#timeEntry {
+    color: black;
+    border: none;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 1% 1%;
+    margin: 8px 0;
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+/*Styling text below:*/
+#timeEntry:focus {
+    border: 5px solid black;
+}
+/*Styling line below:*/
+.whereLeft {
+    width: 35.5%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.whereRight {
+    width: 35.5%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.updateLeft {
+    width: 34.5%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.updateRight {
+    width: 34.5%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.motionLeft {
+    width: 29.5%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.motionRight {
+    width: 29.5%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.honorRight {
+    width: 27%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.honorLeft {
+    width: 27%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.outstandingLeft {
+    width: 24%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.outstandingRight {
+    width: 24%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.bestLeft {
+    width: 39%;
+    display: inline-block;
+}
+/*Styling line below:*/
+.bestRight {
+    width: 39%;
+    display: inline-block;
+}
+/*Styling text below:*/
+.updatingText {
+    font-size: 20px;
+    display: inline-block;
+    color: #FFE17D;
+}
+/*Styling text below:*/
+.whereText {
+    font-size: 20px;
+    display: inline-block;
+    color: #FFE17D;
+}
+/*Styling text below:*/
+.addText {
+    font-size: 20px;
+    display: inline-block;
+    color: #FFE17D;
+}
+/*Styling text below:*/
+.addRight {
+    width: 40.5%;
+    display: inline-block;
+}
+/*Styling text below:*/
+.addLeft {
+    width: 40.5%;
+    display: inline-block;
+}
+/*Styling button below:*/
+#updateAwardButton {
+    margin-left: 58.7%;
+}
+/*Styling button below:*/
+#updateConferenceButton {
+    margin-left: 60.7%;
+}
+/*Styling button below:*/
+#updateLeaderButton {
+    margin-left: 64%;
+}
+/*Styling button below:*/
+#updateMemberButton {
+    margin-left: 63%;
+}
+/*Styling button below:*/
+#addAwardButton {
+    margin-left: 60%;
+}
+/*Styling button below:*/
+#addConferenceButton {
+    margin-left: 62%;
+}
+/*Styling button below:*/
+#addMotionButton {
+    margin-left: 42%;
+    margin-top: -5%;
+}
+/*Styling button below:*/
+#addLeaderButton {
+    margin-left: 65.5%;
+}
+/*Styling button below:*/
+#conferenceRankingButton {
+    margin-left: 56.5%;
+}
+/*Styling button below:*/
+#deleteConferenceButton {
+    margin-left: 60.8%;
+}
+/*Styling button below:*/
+#deleteLeaderButton {
+    margin-left: 64.2%;
+}
+/*Styling button below:*/
+#deleteMemberButton {
+    margin-left: 63.1%;
+}
+/*Styling button below:*/
+#displayRankingButton {
+    margin-left: 62.35%;
+}
+/*Styling button below:*/
+#startMockButton {
+    margin-left: 65%;
+}
+/*Styling button below:*/
+#startAnnounceButton {
+    margin-left: 35%;
+}
+/*Styling button below:*/
+#passedMotionsButton {
+    margin-left: 56%;
+}
+/*Styling button below:*/
+#startTimeButton {
+    margin-left: 10%;
+}
+/*Styling button below:*/
+#startBackButton {
+    margin-left: 60%;
+}
+/*Styling button below:*/
+#resumeMockButton {
+    margin-left: 65%;
+}
+/*Styling button below:*/
+#mockButtonTest {
+    background-color: rgb(39, 57, 77);
+    color: #D8C3A5;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: fixed;
+    margin-left: 0px;
+    width: 30%;
+    height: 15%;
+}
+/*Styling button when hovered over below:*/
+#mockButtonTest:hover {
+    background-color: rgb(55,162,89);
+    color: rgb(39, 57, 77);
+    font-weight: 700;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3 ease 0s;
+}
+/*Styling container below:*/
+#messageColumn {
+    width: 100%;
+}
+/*#firstNameColumn {
+    width: 100%;
+}
+#lastNameColumn {
+    width: 100%;
+}
+#positionColumn {
+    width: 50%;
+}
+#outColumn {
+    width: 50%;
+}
+#bestColumn {
+    width: 50%;
+}
+#honorColumn {
+    width: 50%;
+}*/
+/*Styling container below:*/
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/*Create a custom checkbox*/
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*Styling container below:*/
+#countries {
+    margin-left: 8%;
+    margin-top: 7%;
+    padding:20px;
+    width: 500px;
+    height: 350px;
+    overflow: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #61FFA2;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(53,84,129);
+
+}
+/*Styling container below:*/
+#countrySelectionBox {
+    margin-left: 51.7%;
+    margin-right: 2%;
+    background-color: rgb(39, 57, 77);
+    border-style: solid;
+    border-width: 5px;
+    border-color: #61FFA2;
+    margin-top: -9%;
+    height: 90%;
+}
+/*Styling button below:*/
+#countryButton {
+    margin-left: 35%;
+    width: 200%;
+    height: 200%;
+}
+/*Styling container below:*/
+.container2 {
+    display: inline-block;
+    position: relative;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+/* Hide the browser's default radio button */
+.container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Create a custom radio button */
+.checkmark2 {
+    position: absolute;
+    margin-top: 2.5%;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark2 {
+    background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ .checkmark2 {
+    background-color: #2196F3;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.container2 input:checked ~ .checkmark2:after {
+    display: block;
+}
+/* Style the indicator (dot/circle) */
+.container2 .checkmark2:after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+/*Styling button below:*/
+#entryButtonTest2 {
+    background-color: rgb(39, 57, 77);
+    color: #D8C3A5;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: fixed;
+    margin-left: 0px;
+    width: 200px;
+    height: 170px;
+}
+/*Styling button when hovered over below:*/
+#entryButtonTest2:hover {
+    background-color: rgb(55,162,89);
+    color: rgb(39, 57, 77);
+    font-weight: 700;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3 ease 0s;
+}
+/*Styling container below:*/
+.container3 {
+    display: inline-block;
+    position: relative;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+/* Hide the browser's default radio button */
+.container3 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Create a custom radio button */
+.checkmark3 {
+    position: absolute;
+    margin-top: 1.9%;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.container3:hover input ~ .checkmark3 {
+    background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.container3 input:checked ~ .checkmark3 {
+    background-color: #2196F3;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark3:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.container3 input:checked ~ .checkmark3:after {
+    display: block;
+}
+/* Style the indicator (dot/circle) */
+.container3 .checkmark3:after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+/*Styling background below:*/
+#noScrollBackground {
+    background-image: url("IndexDebateBackground.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 53% 80%;
+    background-position: 50% 85%;
+    background-color: rgb(255, 152, 125);
+    max-height: 100%;
+    overflow: hidden;
+}
+/*Styling button below:*/
+#mockProcedureButton {
+    background-color: rgb(39, 57, 77);
+    color: #D8C3A5;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: fixed;
+    margin-left: 1%;
+    width: 25.5%;
+    height: 12%;
+}
+/*Styling button when hovered over below:*/
+#mockProcedureButton:hover {
+    background-color: rgb(55,162,89);
+    color: rgb(39, 57, 77);
+    font-weight: 700;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3 ease 0s;
+}
+/*Styling text below:*/
+#buttonText {
+    margin-top: 5.5%;
+}
+/*Styling text below:*/
+#paperText {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;*/
+    font-weight: 200;
+    font-size: 100px;
+    padding-left: 2.8%;
+    display: inline-block;  
+    margin-top: -2%;
+    line-height: 50%;
+    text-align: center;
+}
+/*Styling text below:*/
+#motionTextFormat {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;*/
+    font-weight: 200;
+    font-size: 80px;
+    padding-left: 2.8%;
+    display: inline-block;  
+    margin-top: -2%;
+    line-height: 50%;
+    margin-left: 19%;
+    text-align: center;
+}
+/*Styling text below:*/
+#timeText {
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;*/
+    font-weight: 200;
+    font-size: 100px;
+    padding-left: 28%;
+    display: inline-block;  
+    margin-top: -2%;
+}
+/*Styling text below:*/
+#messageText {
+    color: white;
+    border: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1% 1%;
+    margin: 8px 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    resize: none;
+}
+/*Styling text below:*/
+#messageText:focus {
+    border: 5px solid white;
+}
+/*Styling table below:*/
+#scrollTableDiv {
+    /*    border-style: solid;
+        border-width: 5px;
+        border-color: black;*/
+}
+/*Styling table below:*/
+.scrollTable {
+    width: 50%;
+    height: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    /*    border-style: solid;
+        border-width: 10px;
+        border-color: black;*/
+}
+/*Styling table below:*/
+.scrollTable tbody{
+    display:block;
+    width: 100%;
+    overflow: auto;
+    height: 1000%;
+}
+/*Styling table below:*/
+.scrollTable thead {
+    width: 100%;
+    overflow: auto;
+    /*height: 1000%;*/
+}
+/*Styling table below:*/
+td {
+    background-color: #D8C3A5;
+    color: rgb(39, 57, 77);
+    padding:13px;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:300;
+    font-size:22px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #C1C3D1;
+}
+/*Styling table below:*/
+.scrollTable td {
+    /*width: 5%;*/
+    background-color: #D8C3A5;
+    color: rgb(39, 57, 77);
+    padding:13px;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:300;
+    font-size:22px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #C1C3D1;
+}
+/*Styling table below:*/
+tr {
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    background-color: #D8C3A5;
+    color: rgb(39, 57, 77);
+    font-size:16px;
+    font-weight:normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+    text-align: center;
+}
+/*Styling table below:*/
+tr:hover td {
+    color: rgb(39, 57, 77);
+    background:rgb(55,162,89);
+    border-top: 1px solid #22262e;
+}
+/*Styling table below:*/
+.scrollTable thead tr {
+    display: block;
+
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    background-color: #D8C3A5;
+    color: rgb(39, 57, 77);
+    font-size:16px;
+    font-weight:normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+    text-align: center;
+}
+/*Styling table below:*/
+.scrollTable thead tr:hover td {
+    display: block;
+    color: rgb(39, 57, 77);
+    background:rgb(55,162,89);
+    border-top: 1px solid #22262e;
+}
+/*Styling table below:*/
+th {
+    background-color: rgb(39, 57, 77);
+    color: #D8C3A5;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    vertical-align: middle;
+}
+/*Styling table below:*/
+.scrollTable th {
+    background-color: rgb(39, 57, 77);
+    color: #D8C3A5;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    vertical-align: middle;
+}
+/*Styling table below:*/
+#tableTestThree {
+    margin-top: -7%;
+    height: 550px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*#headerTable {
+    position: fixed;
+}*/
+/*Styling button below:*/
+#buttonDiv {
+    margin-top: -10.5%;
+}
+/*Styling table below:*/
+#teamAdminTable {
+    margin-top: -7%;
+    height: 355px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#awardAdminTable {
+    margin-top: -7%;
+    height: 420px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#leadershipAdminTable {
+    margin-top: -7%;
+    height: 360px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#conferencesAdminTable {
+    margin-top: -7%;
+    height: 280px;
+    overflow: hidden;
+    overflow-y: scroll;   
+}
+/*Styling table below:*/
+#inboxAdminTable {
+    margin-top: -7%;
+    height: 520px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#teamTable {
+    margin-top: -7%;
+    height: 520px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#leaderTable {
+    margin-top: -7%;
+    height: 520px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#conferenceTable {
+    margin-top: -7%;
+    height: 520px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#inboxTable {
+    margin-top: -7%;
+    height: 520px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#awardsTable {
+    margin-top: -7%;
+    height: 520px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Styling table below:*/
+#passedMotionsTable {
+    margin-top: -7%;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
